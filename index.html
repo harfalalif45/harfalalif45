@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harf Alalif Tourism • Discover UAE with Ease</title>
+  <meta name="description" content="Harf Alalif Tourism offers desert safaris, city tours, visa services, airport transfers, and curated experiences across the UAE." />
+  <meta property="og:title" content="Harf Alalif Tourism" />
+  <meta property="og:description" content="Desert safaris, city tours & seamless travel services in the UAE." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#D85B11">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/logo.svg" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Harf Alalif Tourism home">
+        <img src="assets/logo.svg" alt="Harf Alalif Tourism logo" width="160" height="42" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#tours">Tours</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--primary" href="#book">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero__content">
+        <h1>Explore the UAE—<span class="accent">your way</span></h1>
+        <p>From golden dunes to glittering skylines, Harf Alalif Tourism crafts memorable experiences with trusted guides and seamless service.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#tours">Browse Popular Tours</a>
+          <a class="btn btn--ghost" href="#contact">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tours" class="section">
+      <div class="container">
+        <h2 class="section__title">Popular Tours</h2>
+        <div class="grid cards">
+          <article class="card">
+            <div class="card__media card__media--safari" role="img" aria-label="Desert Safari at sunset"></div>
+            <div class="card__body">
+              <h3>Desert Safari (Evening)</h3>
+              <p>Dune bashing, camel ride, BBQ dinner & live shows under the stars.</p>
+              <div class="pill">4–6 hrs</div>
+              <a class="btn btn--link" href="#book">Book from AED 150</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media card__media--city" role="img" aria-label="Dubai city skyline at dusk"></div>
+            <div class="card__body">
+              <h3>Dubai City Tour</h3>
+              <p>Old Dubai to Downtown highlights with photo stops & a friendly guide.</p>
+              <div class="pill">Half day</div>
+              <a class="btn btn--link" href="#book">Book from AED 120</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media card__media--abu" role="img" aria-label="Sheikh Zayed Grand Mosque in Abu Dhabi"></div>
+            <div class="card__body">
+              <h3>Abu Dhabi Grand Tour</h3>
+              <p>Grand Mosque, Heritage Village, Corniche & Louvre photo stop.</p>
+              <div class="pill">Full day</div>
+              <a class="btn btn--link" href="#book">Book from AED 220</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--muted">
+      <div class="container">
+        <h2 class="section__title">Travel Services</h2>
+        <div class="grid features">
+          <div class="feature">
+            <div class="feature__icon">🛂</div>
+            <h3>Visa Assistance</h3>
+            <p>Fast & reliable UAE tourist visa processing with support in English, Hindi & Arabic.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🚐</div>
+            <h3>Airport Transfers</h3>
+            <p>Private and shared transfers across all major UAE airports and hotels.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🏨</div>
+            <h3>Hotel Bookings</h3>
+            <p>Great rates at hand‑picked properties across Dubai, Abu Dhabi & beyond.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">👨‍👩‍👧‍👦</div>
+            <h3>Custom Itineraries</h3>
+            <p>Tell us your dates and interests—we’ll plan the perfect trip.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__image" role="img" aria-label="Palm silhouette over dunes at sunrise"></div>
+        <div class="about__content">
+          <h2 class="section__title">About Harf Alalif Tourism</h2>
+          <p>We are a Dubai‑based DMC offering curated tours and travel solutions since 2025. Our team blends local knowledge with global hospitality standards to deliver smooth, reliable, and unforgettable experiences.</p>
+          <ul class="ticks">
+            <li>Licensed guides & insured vehicles</li>
+            <li>Transparent pricing, no hidden fees</li>
+            <li>24/7 traveller support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="section cta">
+      <div class="container">
+        <h2 class="section__title">Ready to go?</h2>
+        <p>Share your travel dates and preferences. We’ll reply with options in minutes.</p>
+        <a class="btn btn--primary" href="#contact">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--muted">
+      <div class="container contact">
+        <h2 class="section__title">Contact Us</h2>
+        <form class="form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form__row">
+            <label>Full Name <input type="text" name="name" required /></label>
+            <label>Email <input type="email" name="email" required /></label>
+          </div>
+          <div class="form__row">
+            <label>Phone/WhatsApp <input type="tel" name="phone" /></label>
+            <label>Travel Dates <input type="text" name="dates" placeholder="e.g., 12–16 Oct" /></label>
+          </div>
+          <label>Message <textarea name="message" rows="4" placeholder="Tell us what you’d like to see & do"></textarea></label>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+        </form>
+        <div class="contact__details">
+          <p><strong>Email:</strong> info@harfalalif.com</p>
+          <p><strong>Phone:</strong> +971-000-0000</p>
+          <p><strong>Office:</strong> Dubai, United Arab Emirates</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/logo.svg" width="140" height="36" alt="Harf Alalif Tourism" />
+        <p class="muted">© <span id="year"></span> Harf Alalif Tourism. All rights reserved.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#tours">Tours</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
